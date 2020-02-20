@@ -1,4 +1,4 @@
-#Thoughts and Design
+# Thoughts and Design
 
 As for now, My favorite language is C++, but it is too complex. Scheme is the most elegant language I have ever seen, but it is not industrial. Python is like glue and it is easy to use, but it is too slow. CLOS is a powerful object system, but its syntax is not that natural. I haven't used go and julia. Maybe I would have a try sometime. So basically, none of the existing programming language can make me satisfied.
   
@@ -20,17 +20,18 @@ Features:
 7. It could be both static and dynamic. (optional)
 
 
-##Grammr
+## Grammr
 Grammar of Gray is mostly inspired by C++ and lisp. The upper layer grammar should be elegant.
 
-###Grammar about macro
+### Grammar about macro
 Code is also first class, like function and data class. Maybe its form is like
     
 `quote(...code is in here...)`, or  `code(...code is here...)`
     
 or like
     
-    quote { code is here }, or code { code is here }
+    quote { code is here }
+    code { code is here }
 
 "Evaluation of the macro call begins like evaluation of a function call except for one crucial difference: the macro arguments are the actual expressions appearing in the macro call. They are not evaluated before they are given to the macro definition. By contrast, the arguments of a function are results of evaluating the elements of the function call list." (from emacs lisp)
 
